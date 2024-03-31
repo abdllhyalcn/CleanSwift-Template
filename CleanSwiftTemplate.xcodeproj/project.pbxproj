@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E4851972BB9F97A007D51FE /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4851962BB9F97A007D51FE /* KRProgressHUD */; };
 		6E7CF7752BB9B9CF00D3647F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7742BB9B9CF00D3647F /* AppDelegate.swift */; };
 		6E7CF7772BB9B9CF00D3647F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7762BB9B9CF00D3647F /* SceneDelegate.swift */; };
 		6E7CF77E2BB9B9D000D3647F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7CF77D2BB9B9D000D3647F /* Assets.xcassets */; };
@@ -16,6 +17,11 @@
 		6E7CF7982BB9B9D000D3647F /* CleanSwiftTemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7972BB9B9D000D3647F /* CleanSwiftTemplateUITestsLaunchTests.swift */; };
 		6E7CF7A82BB9BC6F00D3647F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7A62BB9BC6F00D3647F /* MainViewController.swift */; };
 		6E7CF7A92BB9BC6F00D3647F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7CF7A72BB9BC6F00D3647F /* MainViewController.xib */; };
+		6E7CF7AE2BB9C12400D3647F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6E7CF7AD2BB9C12400D3647F /* Alamofire */; };
+		6E7CF7B42BB9C21A00D3647F /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7B32BB9C21A00D3647F /* NetworkConstants.swift */; };
+		6E7CF7B62BB9C23B00D3647F /* CNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7B52BB9C23B00D3647F /* CNetworkRouter.swift */; };
+		6E7CF7B82BB9C62700D3647F /* CNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7B72BB9C62700D3647F /* CNetworkError.swift */; };
+		6E7CF7BA2BB9C64E00D3647F /* CNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF7B92BB9C64E00D3647F /* CNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 		6E7CF7972BB9B9D000D3647F /* CleanSwiftTemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftTemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6E7CF7A62BB9BC6F00D3647F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6E7CF7A72BB9BC6F00D3647F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6E7CF7B32BB9C21A00D3647F /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		6E7CF7B52BB9C23B00D3647F /* CNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkRouter.swift; sourceTree = "<group>"; };
+		6E7CF7B72BB9C62700D3647F /* CNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkError.swift; sourceTree = "<group>"; };
+		6E7CF7B92BB9C64E00D3647F /* CNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4851972BB9F97A007D51FE /* KRProgressHUD in Frameworks */,
+				6E7CF7AE2BB9C12400D3647F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,7 @@
 		6E7CF7732BB9B9CF00D3647F /* CleanSwiftTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6E7CF7B22BB9C1F700D3647F /* CNetwork */,
 				6E7CF7AB2BB9BC8F00D3647F /* App */,
 				6E7CF7AA2BB9BC8200D3647F /* Assets */,
 				6E7CF7A42BB9BC5300D3647F /* Scenes */,
@@ -159,6 +172,17 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		6E7CF7B22BB9C1F700D3647F /* CNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				6E7CF7B32BB9C21A00D3647F /* NetworkConstants.swift */,
+				6E7CF7B52BB9C23B00D3647F /* CNetworkRouter.swift */,
+				6E7CF7B72BB9C62700D3647F /* CNetworkError.swift */,
+				6E7CF7B92BB9C64E00D3647F /* CNetwork.swift */,
+			);
+			path = CNetwork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +199,10 @@
 			dependencies = (
 			);
 			name = CleanSwiftTemplate;
+			packageProductDependencies = (
+				6E7CF7AD2BB9C12400D3647F /* Alamofire */,
+				6E4851962BB9F97A007D51FE /* KRProgressHUD */,
+			);
 			productName = CleanSwiftTemplate;
 			productReference = 6E7CF7712BB9B9CF00D3647F /* CleanSwiftTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +275,10 @@
 				Base,
 			);
 			mainGroup = 6E7CF7682BB9B9CF00D3647F;
+			packageReferences = (
+				6E7CF7AC2BB9C12400D3647F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6E4851952BB9F97A007D51FE /* XCRemoteSwiftPackageReference "KRProgressHUD" */,
+			);
 			productRefGroup = 6E7CF7722BB9B9CF00D3647F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,7 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7CF7BA2BB9C64E00D3647F /* CNetwork.swift in Sources */,
+				6E7CF7B42BB9C21A00D3647F /* NetworkConstants.swift in Sources */,
 				6E7CF7752BB9B9CF00D3647F /* AppDelegate.swift in Sources */,
+				6E7CF7B62BB9C23B00D3647F /* CNetworkRouter.swift in Sources */,
+				6E7CF7B82BB9C62700D3647F /* CNetworkError.swift in Sources */,
 				6E7CF7772BB9B9CF00D3647F /* SceneDelegate.swift in Sources */,
 				6E7CF7A82BB9BC6F00D3647F /* MainViewController.swift in Sources */,
 			);
@@ -633,6 +669,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E4851952BB9F97A007D51FE /* XCRemoteSwiftPackageReference "KRProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krimpedance/KRProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.8;
+			};
+		};
+		6E7CF7AC2BB9C12400D3647F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E4851962BB9F97A007D51FE /* KRProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4851952BB9F97A007D51FE /* XCRemoteSwiftPackageReference "KRProgressHUD" */;
+			productName = KRProgressHUD;
+		};
+		6E7CF7AD2BB9C12400D3647F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E7CF7AC2BB9C12400D3647F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E7CF7692BB9B9CF00D3647F /* Project object */;
 }
