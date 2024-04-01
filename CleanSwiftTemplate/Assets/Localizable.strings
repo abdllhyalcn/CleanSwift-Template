@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  CleanSwiftTemplate
+
+  Created by Abdullah Yalçın on 1.04.2024.
+  
+*/
+
+/*
+ * MARK: - Network */
+"network.error.invalid.url" = "URL not found.";
+"network.error.invalid.response" = "Invalid response occured.";
+
+/*
+ * MARK: - General */
+"general.alert.title" = "Information";
+"general.alert.okey" = "Okey";
+"general.error" = "Sorry, something went wrong.";

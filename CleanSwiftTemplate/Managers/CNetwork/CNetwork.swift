@@ -10,19 +10,10 @@ import KRProgressHUD
 import Alamofire
 
 protocol CNetworkManagerProtocol {
-    var saom: Int {
-        get
-    }
     func execute<M: Codable>(requestRoute: CNetworkRouter,
                              responseModel: M.Type,
                              isLoaderActive: Bool,
                              completion: @escaping (Swift.Result<M, CNetworkError>) -> Void)
-}
-
-extension CNetworkManagerProtocol {
-    var saom: Int {
-        get { return 4}
-    }
 }
 
 final class CNetwork: CNetworkManagerProtocol {
