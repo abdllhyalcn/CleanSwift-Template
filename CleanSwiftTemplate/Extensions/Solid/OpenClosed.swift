@@ -34,5 +34,4 @@ class CoreDataPersistence: InvoicePersistenceProtocol {
     func save(invoice: String) {
         
     }
-    
 }

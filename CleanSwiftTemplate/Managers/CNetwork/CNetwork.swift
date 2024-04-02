@@ -31,7 +31,7 @@ final class CNetwork: CNetworkManagerProtocol {
                 switch response.result {
                 case .success(let value):
                     completion(.success(value))
-                case .failure(let error):
+                case .failure(_):
                     completion(.failure(.parseError))
                 }
             }

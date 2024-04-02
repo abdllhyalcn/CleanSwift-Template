@@ -44,6 +44,6 @@ class UsageClass {
         builder.insertStringItem(item: "something")
         builder.insertStringItem(item: "something2")
         builder.updateCounter(count: 4)
-        let product = builder.getProduct()
+        //let product = builder.getProduct()
     }
 }
