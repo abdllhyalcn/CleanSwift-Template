@@ -11,21 +11,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let simple = ConcreteComponent()
-        let decorator1 = ConcreteDecoratorA(simple)
-        let decorator2 = ConcreteDecoratorB(decorator1)
-        printDecorator(component: decorator2)
-        
-        let adaptee = Adaptee()
-        print(Adapter(adaptee).request())
         // Do any additional setup after loading the view.
     }
-    
-    func printDecorator(component: Component) {
-        print("Result: " + component.operation())
-    }
-    
     
     /*
      // MARK: - Navigation
